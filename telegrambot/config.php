@@ -20,6 +20,10 @@ class TelegramPluginConfig extends PluginConfig {
                 'label' => 'Include Body',
                 'default' => 0,
             )),
+                'debug' => new BooleanField(array(
+                'label' => 'Debug message in error.log',
+                'default' => 0,
+            )),            
         );
     }
 }

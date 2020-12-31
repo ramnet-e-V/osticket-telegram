@@ -58,7 +58,8 @@ class TelegramPlugin extends Plugin {
                 )
             );
 
-            if (curl_exec($ch) === false) {
+            $result = curl_exec($ch);
+            if ($result === false) {
                 throw new Exception($url . ' - ' . curl_error($ch));
             } else {
                 $statusCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
@@ -69,6 +70,9 @@ class TelegramPlugin extends Plugin {
             }
 
             curl_close($ch);
+		    if ($this->getConfig()->get('debug')) {
+			    error_log ($result);
+		    }
         } catch(Exception $e) {
             error_log('Error posting to Telegram. '. $e->getMessage());
         }
