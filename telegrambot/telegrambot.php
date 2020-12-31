@@ -19,6 +19,7 @@ class TelegramPlugin extends Plugin {
         $title = $ticket->getSubject() ?: 'No subject';
 		$createdBy = $ticket->getName()." (".$ticket->getEmail().")";
 		$chatid = $this->getConfig()->get('telegram-chat-id');
+		$chatid = is_numeric($chatid)?"-".$chatid:"@".$chatid;
         if ($this->getConfig()->get('telegram-include-body')) {
             $body = $ticket->getLastMessage()->getMessage() ?: 'No content';
 			$body = str_replace('<p>', '', $body);
