@@ -2,6 +2,9 @@ osTicket-telegram
 ==============
 An plugin for [osTicket](https://osticket.com) which posts notifications to a [Telegram](https://telegram.org) channel/chat/group.
 
+
+![osTicket to Telegram](https://i.imgur.com/alNuQ7O.png)
+
 Install
 --------
 Clone this repo or download the zip file and place the contents into your `include/plugins` folder.
