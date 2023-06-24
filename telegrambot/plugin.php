@@ -2,11 +2,11 @@
 
 return array(
     'id' =>             'osticket:telegrambot',
-    'version' =>        '0.3',
+    'version' =>        '0.4',
     'name' =>           'Telegram Bot',
-    'author' =>         'Tomas Kirkegaard',
+    'author' =>         'drtomasso, jaimey, ramnet',
     'description' =>    'Notify Telegram on new ticket.',
-    'url' =>            'https://github.com/drtomasso',
+    'url' =>            'https://github.com/ramnet-e-V/osticket-telegram',
     'plugin' =>         'telegrambot.php:TelegramPlugin',
 );
 
