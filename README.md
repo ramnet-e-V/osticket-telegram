@@ -17,6 +17,6 @@ Info
 ------
 This plugin uses CURL and is tested on osTicket v1.18. It was upgraded to use osTicket's plugin instances.
 
-Forked from [jaimey/osticket-telegram](https://github.com/jaimey/osticket-telegram)
-Forked from [drtomasso/osticket-telegram](https://github.com/drtomasso/osticket-telegram)
-Based on [thammanna/osticket-slack](https://github.com/thammanna/osticket-slack)
+- Forked from [jaimey/osticket-telegram](https://github.com/jaimey/osticket-telegram)
+- Forked from [drtomasso/osticket-telegram](https://github.com/drtomasso/osticket-telegram)
+- Based on [thammanna/osticket-slack](https://github.com/thammanna/osticket-slack)
